@@ -1,0 +1,153 @@
+% resume.tex
+%
+% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+% (c) 2003-2007 David J. Grant <davidgrant-at-gmail.com> http://www.davidgrant.ca
+% (c) 2007-2010 Todd C. Miller <Todd.Miller@courtesan.com> http://www.courtesan.com/todd
+%
+% This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+\documentclass[letterpaper,11pt]{article}
+
+%-----------------------------------------------------------
+\usepackage[empty]{fullpage}
+\usepackage{color}
+\definecolor{mygrey}{gray}{0.80}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Adjust margins to 0.5in on all sides
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.0in}
+%\addtolength{\topmargin}{-0.5in}
+%\addtolength{\textheight}{1.0in}
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\large \colorbox{mygrey}{\begin{minipage}{\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{7.0in}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+%-----------------------------------------------------------
+
+
+\begin{document}
+
+\begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}r}
+\textbf{\large Jessica Su}  & 561.543.1855 (phone)\\
+1200 E California Blvd, MSC \#102 & jessicas@caltech.edu \\
+Pasadena, CA 91126 & \\
+\end{tabular*}
+\\
+
+\vspace{0.1in}
+
+\resheading{Education}
+\begin{itemize}
+\item
+	\ressubheading{California Institute of Technology}{Pasadena, CA}{Senior, Computer Science (3.8 GPA)}{September 2007 - present}
+%\item
+%	\ressubheading{Florida Atlantic University}{Boca Raton, FL}{Assorted graduate classes}{September 2008 - February 2010}
+
+\end{itemize}
+
+\resheading{Publications}
+\begin{itemize}
+	\item Marcolli M and \textbf{Su J} (2011) Arithmetic of Potts Model Hypersurfaces.  International Journal of Geometric Methods in Modern Physics, in press.  arXiv:1112.5667 [math-ph].
+	\item Liebovitch L, Peluso P, Norman M, \textbf{Su J}, Gottman J (2011) Mathematical model of the dynamics of psychotherapy.  Cognitive Neurodynamics 1-11.
+	\item Peluso P, Liebovitch L, Gottman J, \textbf{Su J} (2011) A mathematical model of psychotherapy: an investigation using dynamic non-linear equations to model the therapeutic relationship.  Psychotherapy Research.
+	\item Ward C, \textbf{Su J}, Huang Y, Lloyd A, Gould F, Hay B (2011) Medea selfish genetic elements as tools for altering traits of wild populations: a theoretical analysis.  Evolution 65:1149-1162.
+	\item Hay B, Chen CH, Ward CM, Huang H, \textbf{Su JT}, Guo M (2010) Engineering the genomes of wild insect populations: Challenges, and opportunities provided by synthetic Medea selfish genetic elements.  Journal of Insect Physiology 56(10):1402-1413.
+	\item Chen CH, Huang H, Ward CM, \textbf{Su JT}, Schaeffer LV, Guo M, Hay BA (2007) A synthetic maternal-effect selfish genetic element drives population replacement in Drosophila. Science 316:597-600.
+\end{itemize}
+
+\resheading{Conferences}
+\begin{itemize}
+	\item M.D. Norman, L.S. Liebovitch, P.R. Peluso, \textbf{J. Su}, J.M. Gottman.  Mathematical Model of the Dynamics of Psychotherapy.  International Conference on Complex Systems, June 2011, Cambridge MA.
+	\item L. S. Liebovitch, P. R. Peluso, \textbf{J. Su}, J. Gottman. 2010. Mathematical Model of Psychotherapy - A New Approach to Understanding the Therapeutic Relationship. Association for Psychological Science, May 29, 2010, Boston MA.
+\end{itemize}
+
+\resheading{Research Experience}
+\begin{itemize}
+\item
+	\ressubheading{Marcolli Group, Caltech, Department of Mathematics}{Pasadena, CA}{Summer Undergraduate Research Fellow}{June 2011 - August 2011}
+	\begin{itemize}
+		\resitem{Used numerical and analytical methods to determine if Tutte polynomials satisfied the Kontsevich conjecture.}
+	\end{itemize}
+	
+\item
+	\ressubheading{Tenenbaum Lab, MIT, Department of Brain and Cognitive Sciences}{Cambridge, MA}{Research Intern}{June 2010 - August 2010}
+	\begin{itemize}
+		\resitem{Ran computer-based experiments to explore how people learn new words.}
+	\end{itemize}
+	
+
+\item
+	\ressubheading{Liebovitch Group, FAU, Complex Systems and Brain Sciences}{Boca Raton, FL}{Research Intern}{November 2009 - February 2010}
+	\begin{itemize}
+		\resitem{Used nonlinear differential equations to model therapist-client interactions.}
+		\resitem{Solved the equations of the model analytically.}
+	\end{itemize}
+
+
+\item
+	\ressubheading{Phillips Lab, Caltech, Department of Biology}{Pasadena, CA}{Summer Undergraduate Research Fellow}{June 2007 - August 2007}
+	\begin{itemize}
+		\resitem{Used a modified version of BLAST to search for motor proteins in bacteria.}
+	\end{itemize}
+
+\item
+	\ressubheading{Hay Lab, Caltech, Department of Biology}{Pasadena, CA}{Research Intern}{June 2006 - August 2006}
+	\begin{itemize}
+		\resitem{Modeled the dynamics of maternal-effect selfish genes.}
+	\end{itemize}
+
+\end{itemize}
+
+\resheading{Skills}
+\begin{itemize}
+\item \textbf{Computer science classes:} CS 21 (theory of computation), CS 38 (algorithms), CS 156ab (machine learning), CNS 187 (neural computation), CS 153 (lattices and convexity), CS 117 (computability theory)
+\item \textbf{Math classes:}  Ma 108ab (real analysis), Ma 5abc (abstract algebra), Ma 121 (combinatorics), ACM 116 (stochastic processes), ACM 101 (differential equations and dynamical systems), Ma 112 (statistics)
+\item \textbf{Other classes:} Ph 12abc (waves, quantum mechanics, and statistical physics), EE 127 (error-correcting codes), BE 150 (systems biology)
+\item \textbf{Computer skills:} Python, MATLAB, Mathematica, Java, Perl, C, C++, Unix, LaTeX
+\end{itemize}
+
+\resheading{Work Experience}
+\begin{itemize}
+\item
+	\ressubheading{Protabit LLC}{Pasadena, CA}{Consultant}{June 2012 - September 2012}
+	\begin{itemize}
+		\resitem{Benchmarked Protabit's bioinformatics tools on a large protein database.}
+		\resitem{Used company software to design new proteins with similar functionality to existing proteins.}
+	\end{itemize}
+\item
+	\ressubheading{Kaplan Test Prep and Admissions}{Boca Raton, FL}{Instructor}{July 2008 - March 2009}
+	\begin{itemize}
+		\resitem{Taught SAT preparation classes.  Tutored individual students for the SAT and SAT II.}
+	\end{itemize}
+\end{itemize}
+
+\resheading{Awards}
+\begin{itemize}
+    \item Summer Undergraduate Research Fellowship (2011, 2007)
+	\item Top 500 Putnam (2008)
+	\item Lingle Scholarship (2007, awarded to top two freshmen in incoming class)
+	\item Axline Scholarship (2007, full ride)
+	\item US Physics Olympiad semifinalist (2006)
+	\item US Chemistry Olympiad semifinalist (2006)
+	\item Intel International Science Fair (2007)
+	\item Siemens AP Scholar (2006, awarded to 2 high school students per state)
+\end{itemize}
+
+\resheading{References}
+\begin{itemize}
+\item Dr. Bruce Hay, haybruce@its.caltech.edu, 626.395.3399
+\item Dr. Matilde Marcolli, matilde@caltech.edu
+\item Dr. Eric Peterson, atomicpirate@gmail.com
+\end{itemize}
+
+\end{document}
