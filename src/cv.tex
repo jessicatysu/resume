@@ -27,19 +27,26 @@
 %Custom commands
 \newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
 \newcommand{\resheading}[1]{{\large \colorbox{mygrey}{\begin{minipage}{\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+\newcommand{\ressubheadingnoloc}[4]{
+\begin{tabular*}{7.0in}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+
 \newcommand{\ressubheading}[4]{
 \begin{tabular*}{7.0in}{l@{\extracolsep{\fill}}r}
 		\textbf{#1} & #2 \\
-		\textit{#3} & \textit{#4} \\
+		\textit{#3} & \textit{#4}\\
 \end{tabular*}\vspace{-6pt}}
+
 %-----------------------------------------------------------
 
 
 \begin{document}
 
 \begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}r}
-\textbf{\large Jessica Su}  & 561.543.1855 (phone)\\
-jtysu@stanford.edu & GitHub: jessicatysu \\
+\textbf{\large Jessica Su}\\
+jtysu@stanford.edu\\
+561.543.1855 (phone)
 \end{tabular*}
 \\
 
@@ -48,7 +55,7 @@ jtysu@stanford.edu & GitHub: jessicatysu \\
 \resheading{Education}
 \begin{itemize}
 \item
-	\ressubheading{Stanford University}{Palo Alto, CA}{PhD student, Computer Science (1st year)}{September 2013 - present}
+	\ressubheading{Stanford University}{Palo Alto, CA}{PhD student, Computer Science}{September 2013 - present}
 \item
 	\ressubheading{California Institute of Technology}{Pasadena, CA}{B.S., Computer Science (3.8 GPA)}{September 2007 - June 2013}
 
@@ -69,25 +76,40 @@ jtysu@stanford.edu & GitHub: jessicatysu \\
 \resheading{Research Experience}
 \begin{itemize}
 \item
-	\ressubheading{InfoLab, Stanford, Department of Computer Science}{Stanford, CA}{Research Assistant}{September 2013 - Present}
+	\ressubheading{Microsoft Research}{Mountain View, CA}{Intern}{June 2014 - September 2014}
 	\begin{itemize}
-		\resitem{Finding an algorithm to generate random graphs with specific motifs.}
+		\resitem{Working with Nina Mishra on a data mining project.}
 	\end{itemize}
 \item
-	\ressubheading{Marcolli Group, Caltech, Department of Mathematics}{Pasadena, CA}{Summer Undergraduate Research Fellow}{June 2011 - August 2011}
+	\ressubheading{Virginia Williams, Department of Computer Science}{Stanford, CA}{Research Assistant}{April 2014 - June 2014}
+	\begin{itemize}
+		\resitem{Designed an algorithm to solve the multiple-fault replacement paths problem in linear query time.}
+	\end{itemize}
+\item
+	\ressubheading{Ashish Goel, Department of Management Science and Engineering}{Stanford, CA}{Research Assistant}{January 2014 - March 2014}
+	\begin{itemize}
+		\resitem{Investigated voting systems that encourage people to come to consensus on issues.}
+	\end{itemize}
+\item
+	\ressubheading{Jure Leskovec, Department of Computer Science}{Stanford, CA}{Research Assistant}{September 2013 - December 2013}
+	\begin{itemize}
+		\resitem{Designed and implemented an algorithm to generate graphs with specific subgraph counts.}
+	\end{itemize}
+\item
+	\ressubheading{Matilde Marcolli, Caltech, Department of Mathematics}{Pasadena, CA}{Summer Undergraduate Research Fellow}{June 2011 - August 2011}
 	\begin{itemize}
 		\resitem{Proved that Tutte polynomials do not satisfy the Kontsevich conjecture.}
 	\end{itemize}
 	
 \item
-	\ressubheading{Tenenbaum Lab, MIT, Department of Brain and Cognitive Sciences}{Cambridge, MA}{Research Intern}{June 2010 - August 2010}
+	\ressubheading{Noah Goodman, MIT, Department of Brain and Cognitive Sciences}{Cambridge, MA}{Research Intern}{June 2010 - August 2010}
 	\begin{itemize}
 		\resitem{Ran computer-based experiments to explore how people learn new words.}
 	\end{itemize}
 	
 
 \item
-	\ressubheading{Liebovitch Group, FAU, Complex Systems and Brain Sciences}{Boca Raton, FL}{Research Intern}{November 2009 - February 2010}
+	\ressubheading{Larry Liebovitch, FAU, Complex Systems and Brain Sciences}{Boca Raton, FL}{Research Intern}{November 2009 - February 2010}
 	\begin{itemize}
 		\resitem{Used nonlinear differential equations to model therapist-client interactions.}
 		\resitem{Solved the equations of the model analytically.}
@@ -95,28 +117,42 @@ jtysu@stanford.edu & GitHub: jessicatysu \\
 
 
 \item
-	\ressubheading{Phillips Lab, Caltech, Department of Biology}{Pasadena, CA}{Summer Undergraduate Research Fellow}{June 2007 - August 2007}
+	\ressubheading{Rob Phillips, Caltech, Department of Biology}{Pasadena, CA}{Summer Undergraduate Research Fellow}{June 2007 - August 2007}
 	\begin{itemize}
 		\resitem{Used a modified version of BLAST to search for motor proteins in bacteria.}
 	\end{itemize}
 
 \item
-	\ressubheading{Hay Lab, Caltech, Department of Biology}{Pasadena, CA}{Research Intern}{June 2006 - August 2006}
+	\ressubheading{Bruce Hay, Caltech, Department of Biology}{Pasadena, CA}{Research Intern}{June 2006 - August 2006}
 	\begin{itemize}
 		\resitem{Modeled the dynamics of maternal-effect selfish genes.}
 	\end{itemize}
 
 \end{itemize}
 
+\resheading{Class Projects}
+\begin{itemize}
+\item
+	\ressubheadingnoloc{An analysis of congressional tweets}{Pasadena, CA}{Student}{Spring 2013}
+		\begin{itemize}
+		\resitem{Scraped tweets made by congresspeople and used MySQL to correlate them with relevant characteristics of the user.}
+	\end{itemize}
+\item
+	\ressubheadingnoloc{Netflix challenge}{Pasadena, CA}{Student}{Fall 2012}
+	\begin{itemize}
+		\resitem{Used machine learning to predict movie ratings from training data.}
+	\end{itemize}
+\end{itemize}
+
 \resheading{Skills}
 \begin{itemize}
-\item \textbf{Computer science classes:} Machine learning (3 classes), neural computation, lattices and convexity, computability theory, complexity theory, algorithms, systems, databases, social network analysis
+\item \textbf{Computer science classes:} Machine learning (3 classes), neural computation, lattices and convexity, computability theory, complexity theory, algorithms, graph algorithms, algebraic graph algorithms, systems, databases, social network analysis
 \item \textbf{Math classes:}  Real analysis, abstract algebra, combinatorics, stochastic processes, dynamical systems
 \item \textbf{Other classes:} Waves, quantum mechanics, statistical physics, error-correcting codes, systems biology
 \item \textbf{Computer skills:}
 	\begin{itemize}
-	\item Comfortable with: Python, MATLAB, Java, C, C++, Unix, LaTeX
-	\item Have used before: Mathematica, R, Perl, Objective-C, MySQL, Haskell, Assembly
+	\item Comfortable with: Python, MATLAB, Java, C, C++, MySQL, Unix, LaTeX
+	\item Have used before: Mathematica, R, Perl, C\#, Objective-C, Haskell, Assembly
 	\end{itemize}
 \end{itemize}
 
